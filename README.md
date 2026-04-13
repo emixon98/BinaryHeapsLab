@@ -25,9 +25,11 @@ Due to the phrasing of this task, I assumed we were being asked to take the orig
 4. We now compare 3 to its children one last time, the values 2 and 1. 3 is larger than both, and thus has found its final position in the heap following our deletion process.
 
 ### Task 3: Imagine you’ve built a brand-new heap by inserting the following numbers into the heap in this particular order: 55, 22, 34, 10, 2, 99, 68. If you then pop them from the heap one at a time and insert the numbers into a new array, in what order would the numbers now appear?
-
-#### Explanation:
-
+#### Diagram of given heap using max-heap:
+<img width="883" height="602" alt="Screenshot 2026-04-12 193916" src="https://github.com/user-attachments/assets/add6f137-957f-4ecd-a1da-e7d91874cbf5" />
+#### Array after popping
 Heap sort will produce a sorted list despite the structure of the tree itself. The array order will be [99, 68, 55, 34, 22, 10, 2] if using a max heap.
-If we were using a max heap, these values are in descending order, for a min heap they are ascending. The reason being that if we pop a node it needs to be the root node, which is replaced by the last node that then trickles down. We perform this operation for each pop, meaning we get a natural descending order as each next highest value eventually is sorted into the root node.
+#### Explanation of popping one at a time:
+If we were using a max heap, these values are in descending order, for a min heap they are ascending.
+When we pop a node from a max-heap it will always be the root (the largest value), which is replaced by the last node. The last node will trickle down through swapping with its largest child, as shown in the previous task. The resultant heap leaves the largest value as the new root node, and thus the cycle continues. Since our max heap logic results in the largest value always being placed in the root node we get a nicely descending ordered array. 
 
