@@ -12,7 +12,7 @@ Week 9 CISC 187 Lab on Binary Heaps
 1. Insert 11 at the next open slot. Looking "left-to-right" the next open slot would be as the right child of 5.
 2. Utilize "trickling up" comparing 11 with its parent, the value 5. Since 11 is greater we swap.
 3. Compare 11 with its new parent following the swap, the value 9. 11 is greater than 9, we swap again.
-4. Compare once again with the new parent, the root node containing the value 10. 11 is greater than 10, 11 is now the new root node. 
+4. Compare once again with the new parent, the root node containing the value 10. 11 is greater than 10, swap, 11 is now the new root node. 
 
 ### Task 2: Draw what the previous heap would look like after we delete the root node: 
 ![Task2Heap](https://github.com/user-attachments/assets/e60b03ed-7f94-4e47-ab3e-466f73d811df)
