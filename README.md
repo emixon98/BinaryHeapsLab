@@ -26,7 +26,9 @@ Due to the phrasing of this task, I assumed we were being asked to take the orig
 
 ### Task 3: Imagine you’ve built a brand-new heap by inserting the following numbers into the heap in this particular order: 55, 22, 34, 10, 2, 99, 68. If you then pop them from the heap one at a time and insert the numbers into a new array, in what order would the numbers now appear?
 #### Diagram of given heap using max-heap:
+
 <img width="883" height="602" alt="Screenshot 2026-04-12 193916" src="https://github.com/user-attachments/assets/add6f137-957f-4ecd-a1da-e7d91874cbf5" />
+
 #### Array after popping
 Heap sort will produce a sorted list despite the structure of the tree itself. The array order will be [99, 68, 55, 34, 22, 10, 2] if using a max heap.
 #### Explanation of popping one at a time:
